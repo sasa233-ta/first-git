@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja" class="h-100">
+
+<!-- 参考：https://office54.net/iot/bootstrap5/template-sidemenu-create -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>サイドバー</title>
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.bundle.js" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.esm.js" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.esm.min.js" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.js" rel="stylesheet">
+    <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.min.js" rel="stylesheet">
+
+    <!-- CSSの設定ファイル -->
+    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../public/css/modal.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/select2.min.css" rel="stylesheet">
+
+    <!-- JSの設定ファイル -->
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/common.js"></script>
+    <script src="../public/js/jquery.tabletojson.min.js"></script>
+
+
+</head>
+
+<body class="h-100">
+
+    <div class="d-flex flex-row w-100" style="height: calc(100% - 50px)">
+        <!-- メインコンテンツ -->
+        <main class="w-100 bg-light" id="maincontent">
+            <div class="container">
+                <div>
+                    <h1>納品書</h1>
+                    <span>㈱谷笹化成工業所</span>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="border-bottom">㈱大西コルク工業所　様</div>
+                            <div class="border-bottom">納入先　㈱大西コルク工業所　様</div>
+                        </div>
+                        <div class="col">
+                            <table class="table table-bordered border border-2">
+                                <tr>
+                                    <td>出荷<br>明細書 </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <span>〒671-2504<br>
+                                兵庫県宍粟市山崎町東下野137-1<br>
+                                TEL:0790(65)0157<br>
+                                FAX:0790(65)0636<br>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>下記の通り納品いたしましたからご査収ください</p>
+                        </div>
+                        <div class="col">
+                            <table class="table table-bordered border border-2" style="width: 100%;">
+                                <tr>
+                                    <th>年月日</th>
+                                    <th>納入先コード</th>
+                                    <th>仕入先コード</th>
+                                    <th>区分</th>
+                                    <th>直引</th>
+                                    <th>伝票番号</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table class="table table-bordered border border-2" style="width: 100%;">
+                        <tr>
+                            <th>製品コード</th>
+                            <th>品名</th>
+                            <th>入数</th>
+                            <th>梱包数</th>
+                            <th>端数</th>
+                            <th>数量</th>
+                            <th>摘要</th>
+                            <th>倉庫</th>
+                            <th>製造</th>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h1>送り状(控)</h1>
+                    <span>㈱谷笹化成工業所</span>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="border-bottom">㈱大西コルク工業所　様</div>
+                            <div class="border-bottom">納入先　㈱大西コルク工業所　様</div>
+                        </div>
+                        <div class="col">
+                            <table class="table table-bordered border border-2">
+                                <tr>
+                                    <td>出荷<br>明細書 </td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col">
+                            <span>〒671-2504<br>
+                                兵庫県宍粟市山崎町東下野137-1<br>
+                                TEL:0790(65)0157<br>
+                                FAX:0790(65)0636<br>
+                            </span>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>下記の通り物品送付いたします。</p>
+                        </div>
+                        <div class="col">
+                            <table class="table table-bordered border border-2" style="width: 100%;">
+                                <tr>
+                                    <th>年月日</th>
+                                    <th>納入先コード</th>
+                                    <th>仕入先コード</th>
+                                    <th>区分</th>
+                                    <th>直引</th>
+                                    <th>伝票番号</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <table class="table table-bordered border border-2" style="width: 100%;">
+                        <tr>
+                            <th>製品コード</th>
+                            <th>品名</th>
+                            <th>入数</th>
+                            <th>梱包数</th>
+                            <th>端数</th>
+                            <th>数量</th>
+                            <th>摘要</th>
+                        </tr>
+                    </table>
+                </div>
+                <button id="print" class="btn btn-primary">印刷</button>
+            </div>
+        </main>
+    </div>
+    <script src="../public/js/ship.js"></script>
+    <script src="../public/js/select2.min.js"></script>
+
+</body>
+
+</html>

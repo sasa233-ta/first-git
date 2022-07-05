@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja" class="h-100">
+
+<!-- 参考：https://office54.net/iot/bootstrap5/template-sidemenu-create -->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サイドバー</title>
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.rtl.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-grid.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.rtl.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-reboot.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.rtl.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap-utilities.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.rtl.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.bundle.js" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.bundle.min.js" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.esm.js" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.esm.min.js" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.js" rel="stylesheet">
+  <link rel="stylesheet" href="../public/bootstrap/js/bootstrap.min.js" rel="stylesheet">
+
+  <!-- CSSの設定ファイル -->
+  <link rel="stylesheet" href="../public/css/common.css">
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- JSの設定ファイル -->
+  <script src="../public/js/jquery.min.js"></script>
+  <script src="../public/js/common.js"></script>
+  <script src="../public/js/jquery.tabletojson.min.js"></script>
+
+</head>
+
+<body class="h-100">
+  <header class="w-100 d-flex justify-content-between align-items-center bg-light px-3">
+    <ul class="navbar-nav d-flex flex-row">
+      <li class="nav-item mx-3 text-muted active"><a href="#" class="nav-link text-secondary">New</a></li>
+      <li class="nav-item mx-3 text-muted"><a href="#" class="nav-link text-secondary">Login</a></li>
+    </ul>
+  </header>
+  <div class="d-flex flex-row w-100" style="height: calc(100% - 50px)">
+    <nav class="bg-dark sideber">
+      <ul class="nav flex-column m-0">
+        <li class="nav-item mb-2"><a href="#" class="nav-link">ホーム</a></li>
+        <li class="nav-item mb-2"><a href="#" id="mst_prd" class="nav-link">製品管理 ▼</a></li>
+        <ul id="prd-toggle">
+          <li class="nav-item mb-1"><a href="#" class="nav-link nav-link-child">生産管理</a></li>
+          <li class="nav-item mb-1"><a href="./ship.html" class="nav-link nav-link-child">出荷管理</a></li>
+        </ul>
+        <li class="nav-item mb-2"><a href="#" class="nav-link">運送管理</a></li>
+        <li class="nav-item mb-2"><a href="./master.html" class="nav-link">マスター保守</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link">ユーティリティ</a></li>
+      </ul>
+    </nav>
+    <!-- メインコンテンツ -->
+    <main class="w-100 bg-light" id="maincontent">
+      <!-- タイトルバー -->
+      <div class="border shadow-sm d-flex flex-row align-items-center bg-light">
+        <div class="navbar-brand toggle-menu">
+          <button class="btn btn-light btn-sm" id="toggle"><i class="fas fa-bars fa-lg"></i></button>
+        </div>
+        <div class="fs-4 fw-bold">製品管理</div>
+
+      </div>
+
+  </div>
+  <!-- コンテンツ -->
+
+  </main>
+  </div>
+
+</body>
+
+</html>
